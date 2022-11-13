@@ -45,3 +45,28 @@ var resultsContainer = document.querySelector(".results");
     resultsContainer.style.color = "yellow";
 
 //Question 7
+// function catsName (list) {
+    
+//     for (var i = 0; i < cats.length; i++) {
+//         console.log(list.name[i]);
+//     }
+// }
+// catsName(cats);
+
+//Question 8
+function createCats(cats) {
+
+    let catsName = "";
+    let catsAge = "";
+
+    for (var i = 0; i < cats.lenght; i++) {
+        catsAge = `<h5>${cats[i].name}</h5>`;
+        catsName = `<p>${cats[i].age}</p>`;
+    }
+
+    const divContainer = `<div>${catsAge}</div><div>${catsName}</div>`;
+    var catContainer = document.querySelector(".cat-container");
+    catContainer.innerHTML = divContainer;
+}
+
+createCats(cats);
