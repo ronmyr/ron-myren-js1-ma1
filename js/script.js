@@ -33,3 +33,15 @@ heading.style.cssText = "font-size: 2em";
 heading.classList.add("subheading");
 
 //Question 5
+let paragraphs = document.querySelectorAll("p");
+
+for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = "red";
+}
+
+//Question 6
+var resultsContainer = document.querySelector(".results");
+    resultsContainer.innerHTML = "<p>New paragraph</p>";
+    resultsContainer.style.color = "yellow";
+
+//Question 7
